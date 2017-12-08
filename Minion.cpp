@@ -15,7 +15,7 @@ Minion::Minion(string pnombre,int pbatallas,int pexperiencia){
   experiencia=pexperiencia;
 }
 
-vector Minion::getVector(){
+vector<Minion*> Minion::getVector(){
   return lista;
 }
 string Minion::getNombre(){

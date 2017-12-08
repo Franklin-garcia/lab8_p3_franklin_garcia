@@ -9,7 +9,7 @@ protected:
     string nombre;
     int batallas;
     int experiencia;
-    vector<Minion>lista;
+    vector<Minion*>lista;
 
 public:
     Minion(string,int,int);
@@ -17,7 +17,7 @@ public:
     string getNombre();
     int getBatallas();
     int getExperiencia();
-    vector<Minion> getVector();
+    vector<Minion*> getVector();
 
     virtual void Poder()=0;
 

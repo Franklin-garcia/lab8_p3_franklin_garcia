@@ -15,7 +15,7 @@
 using namespace std;
 int main(){
   vector<Minion*>lista_minions;
-  vector<Minion*>lista_equipos;
+  vector<Minion**>lista_equipos;
   bool seguir;
   int opcion;
   while(seguir){
