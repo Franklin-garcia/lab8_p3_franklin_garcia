@@ -1,6 +1,7 @@
 #ifndef MINION_H
 #define MINION_H
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Minion{
@@ -8,6 +9,7 @@ protected:
     string nombre;
     int batallas;
     int experiencia;
+    vector<Minion>lista;
 
 public:
     Minion(string,int,int);
@@ -15,6 +17,7 @@ public:
     string getNombre();
     int getBatallas();
     int getExperiencia();
+    vector<Minion> getVector();
 
     virtual void Poder()=0;
 

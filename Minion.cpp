@@ -6,6 +6,7 @@ Minion::Minion(){
   this->nombre;
   this->batallas;
   this->experiencia;
+  this->lista;
 }
 
 Minion::Minion(string pnombre,int pbatallas,int pexperiencia){
@@ -14,6 +15,9 @@ Minion::Minion(string pnombre,int pbatallas,int pexperiencia){
   experiencia=pexperiencia;
 }
 
+vector Minion::getVector(){
+  return lista;
+}
 string Minion::getNombre(){
   return nombre;
 }

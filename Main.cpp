@@ -15,6 +15,7 @@
 using namespace std;
 int main(){
   vector<Minion*>lista_minions;
+  vector<Minion*>lista_equipos;
   bool seguir;
   int opcion;
   while(seguir){
@@ -194,7 +195,13 @@ int main(){
         }
       }break;//fin de ob
       case 2:{//Hacer equipos
+        if(lista_minions.size()<7){//regla general
+          for(int i=0;i<7;i++){
 
+          }
+        }else{
+          cout<<"No hay suficientes personajes"<<endl;
+        }
       }break;//fin de he
       case 3:{//simulacion
 
